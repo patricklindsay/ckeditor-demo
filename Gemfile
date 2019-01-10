@@ -60,3 +60,9 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+## (Not Required for Ckeditor - Only for display purposes)
+gem 'foundation-rails'
+gem 'autoprefixer-rails'
+gem 'sprockets-es6'
+gem "haml-rails", "~> 1.0"
