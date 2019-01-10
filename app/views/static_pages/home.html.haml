@@ -1,12 +1,16 @@
 %h1 Ckeditor Rails Demo
-%p 
+%p
   This page is to demo the
   <a href='https://github.com/galetahub/ckeditor'>Ckeditor Rails gem</a>.
   Below are the two editors which come bundled with the demo. It's possible to configure editors to display exactly what you like, as well as add extra plugins, host from a CDN etc. Give them a whirl!</p>
 
 %h2 Basic Editor
+= form_for :foo do |form|
+  = cktext_area :page, :info, cols: 40, ckeditor: { toolbar: 'mini' }
 
 %h2 Full Editor
+= form_for :foo do |form|
+  = form.cktext_area :content, value: 'Default content', id: 'sometext'
 
 %h2 Useful Resources
 %ul

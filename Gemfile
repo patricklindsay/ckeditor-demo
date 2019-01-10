@@ -61,6 +61,14 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+# Ckeditor
+gem 'ckeditor', '4.3.0'
+
+# Note: You can show what file upload and image manipulation gem you want to use with Ckeditor
+# https://github.com/galetahub/ckeditor#how-to-generate-models-to-store-uploaded-files
+gem 'carrierwave'
+gem 'mini_magick'
+
 ## (Not Required for Ckeditor - Only for display purposes)
 gem 'foundation-rails'
 gem 'autoprefixer-rails'
